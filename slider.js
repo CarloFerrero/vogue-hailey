@@ -1,0 +1,803 @@
+// SLIDER MODELLI // SLIDER MODELLI // SLIDER MODELLI // SLIDER MODELLI // SLIDER MODELLI // SLIDER MODELLI
+new Splide("#slider_modelli", {
+  //isNavigation: true,
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "30rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows model-arrows",
+    arrow: "splide__arrow model-arrow",
+    prev: "splide__arrow--prev model-prev",
+    next: "splide__arrow--next model-next",
+    // Add classes for pagination.
+    pagination: "splide__pagination model-pagination", // container
+    page: "splide__pagination__page model-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_modelli
+const splideModel = new Splide("#slider_modelli");
+
+splideModel.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("model-page");
+  }
+  data.list.classList.add("model-pagination");
+  const imageSrc = [
+    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4243__280__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4243__280__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4244__280__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+  ];
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    var myImage = new Image(30, 30);
+    myImage.src = imageSrc[item.page];
+    item.button.style.backgroundImage = `url(${myImage.src})`;
+  });
+});
+
+splideModel.mount();
+
+// slider_colori_mod01 // slider_colori_mod01 // slider_colori_mod01 // slider_colori_mod01 // slider_colori_mod01 // slider_colori_mod01
+new Splide("#slider_colori_mod01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "28rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod01
+const splideColorsMod01 = new Splide("#slider_colori_mod01", { speed: 0 });
+
+splideColorsMod01.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.style.backgroundColor = dotColors[item.page];
+  });
+});
+
+splideColorsMod01.mount();
+
+// slider_colori_mod02 // slider_colori_mod02 // slider_colori_mod02 // slider_colori_mod02 // slider_colori_mod02 // slider_colori_mod02
+new Splide("#slider_colori_mod02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod02
+const splideColorsMod02 = new Splide("#slider_colori_mod02");
+
+splideColorsMod02.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod02.mount();
+
+// slider_colori_mod03 // slider_colori_mod03 // slider_colori_mod03 // slider_colori_mod03 // slider_colori_mod03 // slider_colori_mod03
+new Splide("#slider_colori_mod03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod03
+const splideColorsMod03 = new Splide("#slider_colori_mod03");
+
+splideColorsMod03.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod03.mount();
+
+// slider_colori_mod04 // slider_colori_mod04 // slider_colori_mod04 // slider_colori_mod04 // slider_colori_mod04 // slider_colori_mod04
+new Splide("#slider_colori_mod04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod04
+const splideColorsMod04 = new Splide("#slider_colori_mod04");
+
+splideColorsMod04.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod04.mount();
+
+// slider_colori_mod05 // slider_colori_mod05 // slider_colori_mod05 // slider_colori_mod05 // slider_colori_mod05 // slider_colori_mod05
+new Splide("#slider_colori_mod05", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod05
+const splideColorsMod05 = new Splide("#slider_colori_mod05");
+
+splideColorsMod05.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod05.mount();
+
+// slider_colori_mod06 // slider_colori_mod06 // slider_colori_mod06 // slider_colori_mod06 // slider_colori_mod06 // slider_colori_mod06
+new Splide("#slider_colori_mod06", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod06
+const splideColorsMod06 = new Splide("#slider_colori_mod06");
+
+splideColorsMod06.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod06.mount();
+
+// slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07
+new Splide("#slider_colori_mod07", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod07
+const splideColorsMod07 = new Splide("#slider_colori_mod07");
+
+splideColorsMod07.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod07.mount();
+
+// slider_colori_mod08 // slider_colori_mod08 // slider_colori_mod08 // slider_colori_mod08 // slider_colori_mod08 // slider_colori_mod08
+new Splide("#slider_colori_mod08", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows colors-arrows",
+    arrow: "splide__arrow colors-arrow",
+    prev: "splide__arrow--prev colors-prev",
+    next: "splide__arrow--next colors-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination colors-pagination", // container
+    page: "splide__pagination__page colors-page", // each button
+  },
+}).mount();
+
+// Custom pagination for #slider_colori_mod08
+const splideColorsMod08 = new Splide("#slider_colori_mod08");
+
+splideColorsMod08.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("colors-page");
+  }
+  data.list.classList.add("colors-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideColorsMod08.mount();
+
+// slider_viste__mod01_col01 // slider_viste__mod01_col01 // slider_viste__mod01_col01 // slider_viste__mod01_col01 // slider_viste__mod01_col01 // slider_viste__mod01_col01
+new Splide("#slider_viste__mod01_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod01_col02 // slider_viste__mod01_col02 // slider_viste__mod01_col02 // slider_viste__mod01_col02 // slider_viste__mod01_col02 // slider_viste__mod01_col02
+new Splide("#slider_viste__mod01_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod01_col03 // slider_viste__mod01_col03 // slider_viste__mod01_col03 // slider_viste__mod01_col03 // slider_viste__mod01_col03 // slider_viste__mod01_col03
+new Splide("#slider_viste__mod01_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod01_col04 // slider_viste__mod01_col04 // slider_viste__mod01_col04 // slider_viste__mod01_col04 // slider_viste__mod01_col04 // slider_viste__mod01_col04
+new Splide("#slider_viste__mod01_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod02_col01 // slider_viste__mod02_col01 // slider_viste__mod02_col01 // slider_viste__mod02_col01 // slider_viste__mod02_col01 // slider_viste__mod02_col01
+new Splide("#slider_viste__mod02_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod02_col01
+const splideViste__mod02_col01 = new Splide("#slider_viste__mod02_col01");
+
+splideViste__mod02_col01.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod02_col01.mount();
+
+// slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02
+new Splide("#slider_viste__mod02_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod02_col02
+const splideViste__mod02_col02 = new Splide("#slider_viste__mod02_col02");
+
+splideViste__mod02_col02.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod02_col02.mount();
+
+// slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03
+new Splide("#slider_viste__mod02_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod02_col03
+const splideViste__mod02_col03 = new Splide("#slider_viste__mod02_col03");
+
+splideViste__mod02_col03.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod02_col03.mount();
+
+// slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04
+new Splide("#slider_viste__mod02_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod02_col04
+const splideViste__mod02_col04 = new Splide("#slider_viste__mod02_col04");
+
+splideViste__mod02_col04.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod02_col04.mount();
+
+// slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01
+new Splide("#slider_viste__mod03_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod03_col01
+const splideViste__mod03_col01 = new Splide("#slider_viste__mod03_col01");
+
+splideViste__mod03_col01.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod03_col01.mount();
+
+// slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02
+new Splide("#slider_viste__mod03_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod03_col02
+const splideViste__mod03_col02 = new Splide("#slider_viste__mod03_col02");
+
+splideViste__mod03_col02.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod03_col02.mount();
+
+// slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03
+new Splide("#slider_viste__mod03_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod03_col03
+const splideViste__mod03_col03 = new Splide("#slider_viste__mod03_col03");
+
+splideViste__mod03_col03.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod03_col03.mount();
+
+// slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04
+new Splide("#slider_viste__mod03_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// Custom pagination for slider_viste__mod03_col04
+const splideViste__mod03_col04 = new Splide("#slider_viste__mod03_col04");
+
+splideViste__mod03_col04.on("pagination:mounted", function (data) {
+  // You can add your class to the UL element
+  for (i = 0; i < data.items.length; i++) {
+    data.items[i].button.classList.add("viste-page");
+  }
+  data.list.classList.add("viste-pagination");
+
+  // `items` contains all dot items
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+  });
+});
+
+splideViste__mod03_col04.mount();
