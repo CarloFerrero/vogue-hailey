@@ -34,14 +34,14 @@ splideModel.on("pagination:mounted", function (data) {
   }
   data.list.classList.add("model-pagination");
   const imageSrc = [
-    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4243__280__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4243__280__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4244__280__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
-    "/Users/carloferrero/Desktop/splide/asset/0VO4242S__280_80__P21__shad__cfr-min.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61baf9b89142bdb1a3bba7ee_0VO4242S__515273__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61baf9ec25593276466195d0_0VO4243__352__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61baf9fe1418ddcd0e5a71a3_0VO4244__848__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61bafa174fa3d322e83e955a_0VO4245S__515273__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61bafa33a285394cf25fe393_0VO5438S__279280__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61bafa7995f7bd6380d0ab6d_0VO5439__W656__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61bafa8f2559323157619698_0VO5440S__W44_87__P21__shad__cfr.png",
+    "https://uploads-ssl.webflow.com/61baf97d47f6ba4a1a641a16/61bafaafcc8e191228c97c04_0VO5441__2914__P21__shad__cfr.png",
   ];
   // `items` contains all dot items
   data.items.forEach(function (item) {
@@ -109,6 +109,7 @@ new Splide("#slider_colori_mod02", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -131,10 +132,10 @@ splideColorsMod02.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -152,6 +153,7 @@ new Splide("#slider_colori_mod03", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -174,10 +176,10 @@ splideColorsMod03.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -195,6 +197,7 @@ new Splide("#slider_colori_mod04", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -217,10 +220,10 @@ splideColorsMod04.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -238,6 +241,7 @@ new Splide("#slider_colori_mod05", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -260,10 +264,10 @@ splideColorsMod05.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -281,6 +285,7 @@ new Splide("#slider_colori_mod06", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -303,15 +308,14 @@ splideColorsMod06.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
 splideColorsMod06.mount();
-
 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07 // slider_colori_mod07
 new Splide("#slider_colori_mod07", {
   type: "slide",
@@ -324,6 +328,7 @@ new Splide("#slider_colori_mod07", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -346,10 +351,10 @@ splideColorsMod07.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -367,6 +372,7 @@ new Splide("#slider_colori_mod08", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "28rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows colors-arrows",
@@ -389,10 +395,10 @@ splideColorsMod08.on("pagination:mounted", function (data) {
     data.items[i].button.classList.add("colors-page");
   }
   data.list.classList.add("colors-pagination");
-
+  const dotColors = ["#976D4A", "#78605D", "#7B2515", "#070707"];
   // `items` contains all dot items
   data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
+    item.button.style.backgroundColor = dotColors[item.page];
   });
 });
 
@@ -464,42 +470,14 @@ new Splide("#slider_viste__mod02_col01", {
   speed: 0,
   width: "100%",
   perPage: 1,
-  arrows: false,
+  arrows: "slider",
   pagination: false,
   drag: true,
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
-  classes: {
-    // Add classes for arrows.
-    arrows: "splide__arrows viste-arrows",
-    arrow: "splide__arrow viste-arrow",
-    prev: "splide__arrow--prev viste-prev",
-    next: "splide__arrow--next viste-next",
-
-    // Add classes for pagination.
-    pagination: "splide__pagination viste-pagination", // container
-    page: "splide__pagination__page viste-page", // each button
-  },
+  height: "25rem",
 }).mount();
-
-// Custom pagination for slider_viste__mod02_col01
-const splideViste__mod02_col01 = new Splide("#slider_viste__mod02_col01");
-
-splideViste__mod02_col01.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod02_col01.mount();
 
 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02 // slider_viste__mod02_col02
 new Splide("#slider_viste__mod02_col02", {
@@ -513,6 +491,7 @@ new Splide("#slider_viste__mod02_col02", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -525,24 +504,6 @@ new Splide("#slider_viste__mod02_col02", {
     page: "splide__pagination__page viste-page", // each button
   },
 }).mount();
-
-// Custom pagination for slider_viste__mod02_col02
-const splideViste__mod02_col02 = new Splide("#slider_viste__mod02_col02");
-
-splideViste__mod02_col02.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod02_col02.mount();
 
 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03 // slider_viste__mod02_col03
 new Splide("#slider_viste__mod02_col03", {
@@ -556,6 +517,7 @@ new Splide("#slider_viste__mod02_col03", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -568,24 +530,6 @@ new Splide("#slider_viste__mod02_col03", {
     page: "splide__pagination__page viste-page", // each button
   },
 }).mount();
-
-// Custom pagination for slider_viste__mod02_col03
-const splideViste__mod02_col03 = new Splide("#slider_viste__mod02_col03");
-
-splideViste__mod02_col03.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod02_col03.mount();
 
 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04 // slider_viste__mod02_col04
 new Splide("#slider_viste__mod02_col04", {
@@ -599,6 +543,7 @@ new Splide("#slider_viste__mod02_col04", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -611,24 +556,6 @@ new Splide("#slider_viste__mod02_col04", {
     page: "splide__pagination__page viste-page", // each button
   },
 }).mount();
-
-// Custom pagination for slider_viste__mod02_col04
-const splideViste__mod02_col04 = new Splide("#slider_viste__mod02_col04");
-
-splideViste__mod02_col04.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod02_col04.mount();
 
 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01 // slider_viste__mod03_col01
 new Splide("#slider_viste__mod03_col01", {
@@ -636,42 +563,14 @@ new Splide("#slider_viste__mod03_col01", {
   speed: 0,
   width: "100%",
   perPage: 1,
-  arrows: false,
+  arrows: "slider",
   pagination: false,
   drag: true,
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
-  classes: {
-    // Add classes for arrows.
-    arrows: "splide__arrows viste-arrows",
-    arrow: "splide__arrow viste-arrow",
-    prev: "splide__arrow--prev viste-prev",
-    next: "splide__arrow--next viste-next",
-
-    // Add classes for pagination.
-    pagination: "splide__pagination viste-pagination", // container
-    page: "splide__pagination__page viste-page", // each button
-  },
+  height: "25rem",
 }).mount();
-
-// Custom pagination for slider_viste__mod03_col01
-const splideViste__mod03_col01 = new Splide("#slider_viste__mod03_col01");
-
-splideViste__mod03_col01.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod03_col01.mount();
 
 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02 // slider_viste__mod03_col02
 new Splide("#slider_viste__mod03_col02", {
@@ -685,6 +584,7 @@ new Splide("#slider_viste__mod03_col02", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -697,24 +597,6 @@ new Splide("#slider_viste__mod03_col02", {
     page: "splide__pagination__page viste-page", // each button
   },
 }).mount();
-
-// Custom pagination for slider_viste__mod03_col02
-const splideViste__mod03_col02 = new Splide("#slider_viste__mod03_col02");
-
-splideViste__mod03_col02.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod03_col02.mount();
 
 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03 // slider_viste__mod03_col03
 new Splide("#slider_viste__mod03_col03", {
@@ -728,6 +610,7 @@ new Splide("#slider_viste__mod03_col03", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -740,24 +623,6 @@ new Splide("#slider_viste__mod03_col03", {
     page: "splide__pagination__page viste-page", // each button
   },
 }).mount();
-
-// Custom pagination for slider_viste__mod03_col03
-const splideViste__mod03_col03 = new Splide("#slider_viste__mod03_col03");
-
-splideViste__mod03_col03.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
-
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splideViste__mod03_col03.mount();
 
 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04 // slider_viste__mod03_col04
 new Splide("#slider_viste__mod03_col04", {
@@ -771,6 +636,7 @@ new Splide("#slider_viste__mod03_col04", {
   lazyLoad: "nearby",
   keyboard: true,
   direction: "ltr",
+  height: "25rem",
   classes: {
     // Add classes for arrows.
     arrows: "splide__arrows viste-arrows",
@@ -784,20 +650,467 @@ new Splide("#slider_viste__mod03_col04", {
   },
 }).mount();
 
-// Custom pagination for slider_viste__mod03_col04
-const splideViste__mod03_col04 = new Splide("#slider_viste__mod03_col04");
+// slider_viste__mod04_col01 // slider_viste__mod04_col01 // slider_viste__mod04_col01 // slider_viste__mod04_col01 // slider_viste__mod04_col01 // slider_viste__mod04_col01
+new Splide("#slider_viste__mod04_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
 
-splideViste__mod03_col04.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  for (i = 0; i < data.items.length; i++) {
-    data.items[i].button.classList.add("viste-page");
-  }
-  data.list.classList.add("viste-pagination");
+// slider_viste__mod04_col02 // slider_viste__mod04_col02 // slider_viste__mod04_col02 // slider_viste__mod04_col02 // slider_viste__mod04_col02 // slider_viste__mod04_col02
+new Splide("#slider_viste__mod04_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
 
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
 
-splideViste__mod03_col04.mount();
+// slider_viste__mod04_col03 // slider_viste__mod04_col03 // slider_viste__mod04_col03 // slider_viste__mod04_col03 // slider_viste__mod04_col03 // slider_viste__mod04_col03
+new Splide("#slider_viste__mod04_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod04_col04 // slider_viste__mod04_col04 // slider_viste__mod04_col04 // slider_viste__mod04_col04 // slider_viste__mod04_col04 // slider_viste__mod04_col04
+new Splide("#slider_viste__mod04_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod05_col01 // slider_viste__mod05_col01 // slider_viste__mod05_col01 // slider_viste__mod05_col01 // slider_viste__mod05_col01 // slider_viste__mod05_col01
+new Splide("#slider_viste__mod05_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod05_col02 // slider_viste__mod05_col02 // slider_viste__mod05_col02 // slider_viste__mod05_col02 // slider_viste__mod05_col02 // slider_viste__mod05_col02
+new Splide("#slider_viste__mod05_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod05_col03 // slider_viste__mod05_col03 // slider_viste__mod05_col03 // slider_viste__mod05_col03 // slider_viste__mod05_col03 // slider_viste__mod05_col03
+new Splide("#slider_viste__mod05_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod05_col04 // slider_viste__mod05_col04 // slider_viste__mod05_col04 // slider_viste__mod05_col04 // slider_viste__mod05_col04 // slider_viste__mod05_col04
+new Splide("#slider_viste__mod05_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod06_col01 // slider_viste__mod06_col01 // slider_viste__mod06_col01 // slider_viste__mod06_col01 // slider_viste__mod06_col01 // slider_viste__mod06_col01
+new Splide("#slider_viste__mod06_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod06_col02 // slider_viste__mod06_col02 // slider_viste__mod06_col02 // slider_viste__mod06_col02 // slider_viste__mod06_col02 // slider_viste__mod06_col02
+new Splide("#slider_viste__mod06_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod06_col03 // slider_viste__mod06_col03 // slider_viste__mod06_col03 // slider_viste__mod06_col03 // slider_viste__mod06_col03 // slider_viste__mod06_col03
+new Splide("#slider_viste__mod06_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod06_col04 // slider_viste__mod06_col04 // slider_viste__mod06_col04 // slider_viste__mod06_col04 // slider_viste__mod06_col04 // slider_viste__mod06_col04
+new Splide("#slider_viste__mod06_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod07_col01 // slider_viste__mod07_col01 // slider_viste__mod07_col01 // slider_viste__mod07_col01 // slider_viste__mod07_col01 // slider_viste__mod07_col01
+new Splide("#slider_viste__mod07_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod07_col02 // slider_viste__mod07_col02 // slider_viste__mod07_col02 // slider_viste__mod07_col02 // slider_viste__mod07_col02 // slider_viste__mod07_col02
+new Splide("#slider_viste__mod07_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod07_col03 // slider_viste__mod07_col03 // slider_viste__mod07_col03 // slider_viste__mod07_col03 // slider_viste__mod07_col03 // slider_viste__mod07_col03
+new Splide("#slider_viste__mod07_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod07_col04 // slider_viste__mod07_col04 // slider_viste__mod07_col04 // slider_viste__mod07_col04 // slider_viste__mod07_col04 // slider_viste__mod07_col04
+new Splide("#slider_viste__mod07_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod08_col01 // slider_viste__mod08_col01 // slider_viste__mod08_col01 // slider_viste__mod08_col01 // slider_viste__mod08_col01 // slider_viste__mod08_col01
+new Splide("#slider_viste__mod08_col01", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: "slider",
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+}).mount();
+
+// slider_viste__mod08_col02 // slider_viste__mod08_col02 // slider_viste__mod08_col02 // slider_viste__mod08_col02 // slider_viste__mod08_col02 // slider_viste__mod08_col02
+new Splide("#slider_viste__mod08_col02", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod08_col03 // slider_viste__mod08_col03 // slider_viste__mod08_col03 // slider_viste__mod08_col03 // slider_viste__mod08_col03 // slider_viste__mod08_col03
+new Splide("#slider_viste__mod08_col03", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
+
+// slider_viste__mod08_col04 // slider_viste__mod08_col04 // slider_viste__mod08_col04 // slider_viste__mod08_col04 // slider_viste__mod08_col04 // slider_viste__mod08_col04
+new Splide("#slider_viste__mod08_col04", {
+  type: "slide",
+  speed: 0,
+  width: "100%",
+  perPage: 1,
+  arrows: false,
+  pagination: false,
+  drag: true,
+  lazyLoad: "nearby",
+  keyboard: true,
+  direction: "ltr",
+  height: "25rem",
+  classes: {
+    // Add classes for arrows.
+    arrows: "splide__arrows viste-arrows",
+    arrow: "splide__arrow viste-arrow",
+    prev: "splide__arrow--prev viste-prev",
+    next: "splide__arrow--next viste-next",
+
+    // Add classes for pagination.
+    pagination: "splide__pagination viste-pagination", // container
+    page: "splide__pagination__page viste-page", // each button
+  },
+}).mount();
